@@ -15,7 +15,7 @@ const App: React.FC = () => {
       <hr></hr>
       <div className={'flex'}>
         <Button disabled>hello world</Button>
-        <Button btnType={ButtonType.Default}>Default</Button>
+        <Button btnType={ButtonType.Default} className="custom" onClick={(e)=>{e.preventDefault(); alert(131)}}>Default</Button>
         <Button btnType={ButtonType.Danger}>Danger</Button>
         <Button size={ButtonSize.Small} btnType={ButtonType.Primary}>Small</Button>
         <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>hello world</Button>
